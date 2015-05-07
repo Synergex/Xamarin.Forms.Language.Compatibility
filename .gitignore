@@ -16,6 +16,9 @@ local.properties
 .settings/
 .loadpath
 
+# NuGet
+*.nupkg
+
 # External tool builders
 .externalToolBuilders/
 
