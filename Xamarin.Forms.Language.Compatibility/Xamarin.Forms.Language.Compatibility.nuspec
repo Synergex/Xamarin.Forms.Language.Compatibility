@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Xamarin.Forms.Language.Compatability</id>
+        <version>1.2</version>
+        <authors>Synergex</authors>
+        <owners>Synergex</owners>
+        <iconUrl>http://xamarin.com/content/images/nuget/xamarin.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Replaces Xamarin Forms C# specific code with whatever language you are using based on installed codedom providers</description>
+        <copyright>Copyright 2015</copyright>
+	
+    </metadata>
+    <files>
+  	<file src="bin\Release\**\*.*" target="build" /> 
+	<file src="build\Xamarin.Forms.Language.Compatability.targets" target="build\Xamarin.Forms.Language.Compatability.targets"/>
+	<file src="_._" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\_._"/>
+    </files>
+</package>
