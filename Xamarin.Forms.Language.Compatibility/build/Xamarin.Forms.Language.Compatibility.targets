@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	
 	<UsingTask TaskName="Xamarin.Forms.Language.Compatibility.CodeGenFixupTask" AssemblyFile="Xamarin.Forms.Language.Compatibility.dll"/>
-	<Target Name="_CodeGenFixup" BeforeTargets="XamlG" AfterTargets="_CoreXamlG">
+	<Target Name="_CodeGenFixup" BeforeTargets="_CoreXamlG" AfterTargets="_CollectXamlFiles">
 		<CodeGenFixupTask
 			Language = "$(Language)" />
 	</Target>
