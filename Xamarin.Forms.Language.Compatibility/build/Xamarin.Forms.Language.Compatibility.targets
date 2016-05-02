@@ -5,5 +5,11 @@
 		<CodeGenFixupTask
 			Language = "$(Language)" />
 	</Target>
+	
+	<Target Name="_CollectXamlFilesFixup" BeforeTargets="_CollectXamlFiles">
+		<ItemGroup>
+			<_XamlResources Include="@(EmbeddedResource)" Condition="'%(Extension)' == '.xaml'"/>
+		</ItemGroup>
+	</Target>
 
 </Project>
