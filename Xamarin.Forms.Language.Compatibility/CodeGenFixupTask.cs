@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Language.Compatibility
         {
             var targetAsm = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault((asm) => asm.FullName.StartsWith("Xamarin.Forms.Build.Tasks"));
             var xamlGTaskType = targetAsm.GetType("Xamarin.Forms.Build.Tasks.XamlGTask");
-            var providerProperty = xamlGTaskType.GetField("provider", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+            var providerProperty = xamlGTaskType.GetField("Provider", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
             providerProperty.SetValue(null, CodeDomProvider.CreateProvider(Language));
             Trace.WriteLine(providerProperty.GetValue(null));
             return true;
