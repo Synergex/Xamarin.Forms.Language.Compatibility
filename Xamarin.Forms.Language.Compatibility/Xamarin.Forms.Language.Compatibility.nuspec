@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Xamarin.Forms.Language.Compatibility</id>
-        <version>1.3</version>
+        <version>1.4</version>
         <authors>Synergex</authors>
         <owners>Synergex</owners>
         <iconUrl>http://xamarin.com/content/images/nuget/xamarin.png</iconUrl>
@@ -12,8 +12,8 @@
 	
     </metadata>
     <files>
-  	<file src="bin\Release\**\*.*" target="build" /> 
-	<file src="build\Xamarin.Forms.Language.Compatibility.targets" target="build\Xamarin.Forms.Language.Compatibility.targets"/>
-	<file src="_._" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\_._"/>
+      <file src="bin\Release\Xamarin.Forms.Language.Compatibility.*" target="build" /> 
+      <file src="build\Xamarin.Forms.Language.Compatibility.targets" target="build\Xamarin.Forms.Language.Compatibility.targets"/>
+      <file src="_._" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\_._"/>
     </files>
 </package>
